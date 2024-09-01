@@ -1,9 +1,15 @@
 {
+    "include": [
+       "**/source"
+    ],
     "compilerOptions": {
-        "noEmit": true,
+        // Input
         "strict": true,
         "moduleResolution": "NodeNext",
         "module": "NodeNext",
+        // Output
         "target": "ESNext",
+        "outDir": "dist",
+        "declaration": true,
     }
 }

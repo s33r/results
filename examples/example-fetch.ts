@@ -11,9 +11,9 @@ type Photograph = {
 }
 
 /**
- * Makes a request to the API at the provided url.
- * @param url the url to fetch
- * @returns 
+ * Makes a request to the API at the provided url and translates it to js data.
+ * @param url the url to fetch.
+ * @returns A ResultContainer with the returned data or errors.
  */
 const getData = async (
     url: string

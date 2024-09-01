@@ -1,10 +1,17 @@
 {
   "name": "@ehwillows/general-errors",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "General error handling",
+  "type": "module",
   "main": "index.js",
+  "files": [
+    "dist",
+    "docs"
+  ],
   "scripts": {
-    "start": "tsx source/examples/example-fetch.ts"
+    "start": "tsx source/examples/example-fetch.ts",
+    "build": "rm -rf dist && tsc",
+    "docs": "rm -rf docs && typedoc --out docs --entryPointStrategy expand source"
   },
   "repository": {
     "type": "git",
@@ -22,6 +29,7 @@
   "devDependencies": {
     "@types/node": "^22.5.2",
     "tsx": "^4.19.0",
+    "typedoc": "^0.26.6",
     "typescript": "^5.5.4"
   },
   "peerDependencies": {

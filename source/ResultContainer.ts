@@ -1,4 +1,4 @@
-import { GeneralError } from "./GeneralError";
+import { GeneralError } from "./GeneralError.js";
 
 const convertError = (
     error: string | GeneralError,
