@@ -28,7 +28,6 @@ export class GeneralError {
     readonly #location: string;
     readonly #source  : string;
 
-
     static toString(data: GeneralError | Array<GeneralError>): string;
 
     /**
@@ -54,7 +53,6 @@ export class GeneralError {
     /**
      * Converts a General error into a plain JavaScript object.
      * @param data The GeneralError to convert
-     * @returns
      */
     static toBag(
         data: GeneralError,
@@ -72,7 +70,6 @@ export class GeneralError {
      * Very useful when localizing error messages.
      * @param data The GeneralError to translate
      * @param codeMap A map that links error codes to a message.
-     * @returns
      */
     static translate(
         data: GeneralError,
