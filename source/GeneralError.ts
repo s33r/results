@@ -2,31 +2,31 @@
 const getLocation = (): string => {
     const error = new Error();
 
-    if(error.stack) {
+    if (error.stack) {
         return error.stack;
     } else {
         return '';
     }
-}
+};
 
 /**
  * Plain JavaScript object that represents a GeneralError
  */
 export type GeneralErrorBag = {
-    message: string;
+    message : string;
     location: string;
-    source: string;
-    code: string;
-}
+    source  : string;
+    code    : string;
+};
 
 /**
- * A GeneralError is a common data structure for error data that comes from a variety of sources. 
+ * A GeneralError is a common data structure for error data that comes from a variety of sources.
  */
 export class GeneralError {
-    readonly #code: string;
-    readonly #message: string;
+    readonly #code    : string;
+    readonly #message : string;
     readonly #location: string;
-    readonly #source: string;
+    readonly #source  : string;
 
 
     static toString(data: GeneralError | Array<GeneralError>): string;
@@ -35,36 +35,36 @@ export class GeneralError {
      * Converts one or more GeneralErrors to a string.
      * @param data One or more GeneralErrors to convert
      * @param delimiter An optional value used to separate errors if there are more tha one.
-     * @returns 
+     * @returns
      */
     static toString(
         data: GeneralError | Array<GeneralError>,
-        delimiter = '\n'
+        delimiter = '\n',
     ): string {
-        if(Array.isArray(data)) {
+        if (Array.isArray(data)) {
             return data.map(this.toString).join(delimiter);
         } else {
-            const code = data.code ? `[${data.code} ${data.source}] ` : '';
-            const location = data.location ? `[${data.location}] ` : '';
-            
-            return `${code}${location}${data.message}`;
+            const code = data.code ? `[${ data.code } ${ data.source }] ` : '';
+            const location = data.location ? `[${ data.location }] ` : '';
+
+            return `${ code }${ location }${ data.message }`;
         }
     }
 
     /**
      * Converts a General error into a plain JavaScript object.
      * @param data The GeneralError to convert
-     * @returns 
+     * @returns
      */
     static toBag(
         data: GeneralError,
     ): GeneralErrorBag {
         return {
-            code: data.code,
-            message: data.message,
+            code    : data.code,
+            message : data.message,
             location: data.location,
-            source: data.source,
-        }
+            source  : data.source,
+        };
     }
 
     /**
@@ -72,7 +72,7 @@ export class GeneralError {
      * Very useful when localizing error messages.
      * @param data The GeneralError to translate
      * @param codeMap A map that links error codes to a message.
-     * @returns 
+     * @returns
      */
     static translate(
         data: GeneralError,
@@ -85,7 +85,7 @@ export class GeneralError {
     }
 
     constructor(
-        data: Partial<GeneralErrorBag> & Pick<GeneralErrorBag, 'message'>
+        data: Partial<GeneralErrorBag> & Pick<GeneralErrorBag, 'message'>,
     ) {
         this.#code = data.code ?? '';
         this.#message = data.message;
