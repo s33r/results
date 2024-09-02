@@ -1,4 +1,4 @@
-import { GeneralError } from './GeneralError.js';
+import GeneralError from './GeneralError.js';
 
 // All external dependencies should be type only imports
 import type z from 'zod';

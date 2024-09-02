@@ -16,6 +16,7 @@ const toggleTypescript = (rule, value) => {
 export default pluginTypescript.config(
     {
         ignores: [
+            'lib/**/*',
             'dist/**/*',
             'docs/**/*',
         ],

@@ -3,5 +3,10 @@
         "./source"
     ],
     "out": "./docs",
-    "entryPointStrategy": "expand"
+    "entryPointStrategy": "expand",
+    "sort": [
+        "static-first",
+        "kind",
+        "alphabetical"
+    ]
 }

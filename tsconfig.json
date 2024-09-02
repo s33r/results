@@ -1,6 +1,6 @@
 {
     "include": [
-       "**/source"
+        "**/source"
     ],
     "compilerOptions": {
         // Input
@@ -9,7 +9,7 @@
         "module": "NodeNext",
         // Output
         "target": "ESNext",
-        "outDir": "dist",
+        "outDir": "lib",
         "declaration": true,
     }
 }

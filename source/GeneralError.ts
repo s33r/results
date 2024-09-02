@@ -22,7 +22,7 @@ export type GeneralErrorBag = {
 /**
  * A GeneralError is a common data structure for error data that comes from a variety of sources.
  */
-export class GeneralError {
+export default class GeneralError {
     readonly #code    : string;
     readonly #message : string;
     readonly #location: string;
