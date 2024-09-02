@@ -1,5 +1,5 @@
 {
-  "name": "@ehwillows/general-errors",
+  "name": "@ehwillows/results",
   "version": "0.0.2",
   "description": "General error handling",
   "type": "module",

@@ -31,7 +31,7 @@ export type SuccessResult<T = null> = {
 };
 
 /**
- * Th result of a process.
+ * The result of a process. May be either a FailureResult or a SuccessResult<T>
  */
 export type ResultContainer<T = null> = FailureResult | SuccessResult<T>;
 
