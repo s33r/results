@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s33r/general-errors.git"
+    "url": "git+https://github.com/s33r/results.git"
   },
   "keywords": [
     "Error"
@@ -24,7 +24,7 @@
   "author": "Erin Willows (erin@ehwillows.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s33r/general-errors/issues"
+    "url": "https://github.com/s33r/results/issues"
   },
   "homepage": "hhttps://ehwillows.com/general-errors",
   "devDependencies": {
