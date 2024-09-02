@@ -1,22 +1,18 @@
 {
     "cSpell.words": [
+        "ehwillows",
         "unvalidated"
     ],
-
     "eslint.format.enable": true,
-
     "editor.formatOnSave": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     },
-
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     },
-
     "typescript.preferences.quoteStyle": "single",
     "typescript.preferences.importModuleSpecifierEnding": "js",
     "javascript.preferences.quoteStyle": "single",

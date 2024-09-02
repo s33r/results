@@ -11,7 +11,8 @@
   "scripts": {
     "start": "tsx source/examples/example-fetch.ts",
     "build": "rm -rf dist && tsc",
-    "docs": "rm -rf docs && typedoc --out docs --entryPointStrategy expand source"
+    "lint": "eslint",
+    "docs": "rm -rf docs && typedoc"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/s33r/general-errors/issues"
   },
-  "homepage": "https://github.com/s33r/general-errors#readme",
+  "homepage": "hhttps://ehwillows.com/general-errors",
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "@stylistic/eslint-plugin": "^2.7.2",
