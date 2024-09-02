@@ -1,12 +1,11 @@
 {
   "name": "@ehwillows/results",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "General error handling",
   "type": "module",
   "main": "lib/index.js",
   "files": [
-    "lib",
-    "docs"
+    "lib"
   ],
   "scripts": {
     "start": "tsx source/examples/example-fetch.ts",

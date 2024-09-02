@@ -1,4 +1,4 @@
-# @ehwillows/general-errors
+# @ehwillows/results
 
 General error handling utilities.
 
